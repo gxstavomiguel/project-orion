@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\unity\\projet orion\\project Orion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|c:\\dev\\unity\\projet orion\\project orion\\assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|solutionrelative:assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|C:\\dev\\unity\\projet orion\\project Orion\\assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|solutionrelative:assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|C:\\dev\\unity\\projet orion\\project Orion\\assets\\fpsdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|solutionrelative:assets\\fpsdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraFollow.cs",
+              "ToolTip": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\CameraFollow.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAmwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T15:36:26.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FPSDisplay.cs",
+              "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\FPSDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\FPSDisplay.cs",
+              "ToolTip": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\FPSDisplay.cs",
+              "RelativeToolTip": "Assets\\FPSDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T14:46:30.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerMovement.cs",
+              "ToolTip": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\PlayerMovement.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T14:33:52.385Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
