@@ -1,52 +1,3 @@
-// using UnityEngine;
-
-// public class PlayerCombat : MonoBehaviour
-// {
-//     [Header("Ataque Leve")]
-//     public float cooldownAtaque = 0.5f;
-//     private float ultimoAtaque = -Mathf.Infinity;
-
-//     [SerializeField] private Animator animator;
-    
-//     private PlayerMovement playerMovement;
-
-//     void Start()
-//     {
-//         if (animator == null)
-//             animator = GetComponentInChildren<Animator>(); 
-
-//         playerMovement = GetComponent<PlayerMovement>();
-
-//         if (animator == null)
-//             Debug.LogError("[Combat] Animator não encontrado nem nos filhos!");
-//     }
-
-//     void Update()
-//     {
-//         if (Input.GetMouseButtonDown(0))
-//             TentarAtaqueLeve();
-//     }
-
-//     void TentarAtaqueLeve()
-//     {
-//         bool cooldownOk = Time.time >= ultimoAtaque + cooldownAtaque;
-//         Debug.Log($"[Combat] Mouse0 pressionado | cooldownOk={cooldownOk}");
-
-//         if (!cooldownOk) return;
-
-//         ultimoAtaque = Time.time;
-
-//         if (animator == null)
-//         {
-//             Debug.LogError("[Combat] Animator é null!");
-//             return;
-//         }
-
-//         animator.SetTrigger("LightAttack");
-//         Debug.Log("[Combat] Trigger 'LightAttack' enviado!");
-//     }
-// }
-
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
@@ -58,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private Animator animator;
 
     private PlayerMovement playerMovement;
-    private PlayerEquipment playerEquipment; // <-- novo
+    private PlayerEquipment playerEquipment;
 
     void Start()
     {
@@ -66,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
             animator = GetComponentInChildren<Animator>();
 
         playerMovement  = GetComponent<PlayerMovement>();
-        playerEquipment = GetComponent<PlayerEquipment>(); // busca no mesmo GO
+        playerEquipment = GetComponent<PlayerEquipment>(); 
 
         if (animator == null)
             Debug.LogError("[Combat] Animator não encontrado!");
@@ -80,24 +31,49 @@ public class PlayerCombat : MonoBehaviour
             TentarAtaqueLeve();
     }
 
+    System.Collections.IEnumerator DarDanoComDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Camera cam = Camera.main;
+        if (cam == null) yield break;
+
+        Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+
+        Debug.DrawRay(ray.origin, ray.direction * 2.5f, Color.red, 1f);
+
+        if (Physics.Raycast(ray, out hit, 2.5f))
+        {
+            Enemy enemy = hit.collider.GetComponentInParent<Enemy>();
+
+            if (enemy != null)
+            {
+                enemy.ReceberDano(25f);
+            }
+        }
+    }
+
     void TentarAtaqueLeve()
     {
-        // sem arma equipada, não ataca (troque por soco se quiser)
-        if (playerEquipment == null || playerEquipment.ItemEquipado == null)
-        {
-            Debug.Log("[Combat] Nenhuma arma equipada.");
-            return;
-        }
+    if (playerEquipment == null || playerEquipment.ItemEquipado == null)
+    {
+        Debug.Log("[Combat] Nenhuma arma equipada.");
+        return;
+    }
 
-        bool cooldownOk = Time.time >= ultimoAtaque + cooldownAtaque;
-        if (!cooldownOk) return;
+    bool cooldownOk = Time.time >= ultimoAtaque + cooldownAtaque;
+    if (!cooldownOk) return;
 
-        ultimoAtaque = Time.time;
+    ultimoAtaque = Time.time;
 
-        // usa o trigger definido no próprio ItemSO — flexível para armas diferentes
-        string trigger = playerEquipment.ItemEquipado.animacaoAtaque;
-        animator.SetTrigger(trigger);
+    string trigger = playerEquipment.ItemEquipado.animacaoAtaque;
+    animator.SetTrigger(trigger);
 
-        Debug.Log($"[Combat] Ataque com {playerEquipment.ItemEquipado.nomeItem} | trigger: {trigger}");
+    Debug.Log($"[Combat] Ataque com {playerEquipment.ItemEquipado.nomeItem} | trigger: {trigger}");
+
+    StartCoroutine(DarDanoComDelay(0.2f));
+
+    
     }
 }

@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     // public float velocidadeDevagar = 2f;
     // public float velocidadeCorrer = 10f;
 
-
     public float velocidadeNormal = 3f;
     public float velocidadeDevagar = 1f;
     public float velocidadeCorrer = 4f;
@@ -98,12 +97,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && noChao)
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, forcaPulo, rb.linearVelocity.z);
     }
-
-    // void Mover()
-    // {
-    //     Vector3 velocidadeAlvo = direcaoMovimento.normalized * (direcaoMovimento.magnitude > 0 ? velocidadeAtual : 0);
-    //     rb.linearVelocity = new Vector3(velocidadeAlvo.x, rb.linearVelocity.y, velocidadeAlvo.z);
-    // }
 
     void Mover()
 {

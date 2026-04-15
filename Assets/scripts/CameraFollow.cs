@@ -9,8 +9,7 @@ public class CameraFollow : MonoBehaviour
     public float distancia = 6f;
     public float altura = 1.5f;
 
-    [Header("Configuração — Primeira Pessoa")]
-    // public float alturaFirstPerson = 1.7f; 
+    [Header("Configuração — Primeira Pessoa")] 
     public float alturaFirstPerson = 0.7f; 
 
     [Header("Mouse")]
