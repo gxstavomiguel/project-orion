@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\dev\\unity\\projet orion\\project Orion\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|c:\\dev\\unity\\projet orion\\project orion\\assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4231A80B-CD67-9B32-0808-C30004B3F512}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\unity\\projet orion\\project Orion\\Library\\PackageCache\\com.unity.render-pipelines.universal@e9f15c489688\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@e9f15c489688\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerCombat.cs",
+              "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\scripts\\PlayerCombat.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerCombat.cs",
+              "ToolTip": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\scripts\\PlayerCombat.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerCombat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T12:17:26.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Lit.shader",
               "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Library\\PackageCache\\com.unity.render-pipelines.universal@e9f15c489688\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@e9f15c489688\\Shaders\\Lit.shader",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\CameraFollow.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FPSDisplay.cs",
               "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\FPSDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\FPSDisplay.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\dev\\unity\\projet orion\\project Orion\\Assets\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerMovement.cs",

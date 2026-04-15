@@ -5,3 +5,11 @@
 [Ll]ogs/
 UserSettings/
 MemoryCaptures/
+.vs/
+*.csproj
+*.sln
+Library/
+Temp/
+Obj/
+Build/
+Logs/
