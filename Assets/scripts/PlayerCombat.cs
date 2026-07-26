@@ -17,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
             animator = GetComponentInChildren<Animator>();
 
         playerMovement  = GetComponent<PlayerMovement>();
-        playerEquipment = GetComponent<PlayerEquipment>(); 
+        playerEquipment = GetComponent<PlayerEquipment>();
 
         if (animator == null)
             Debug.LogError("[Combat] Animator não encontrado!");
@@ -45,11 +45,15 @@ public class PlayerCombat : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 2.5f))
         {
-            Enemy enemy = hit.collider.GetComponentInParent<Enemy>();
+            // ANTES: Enemy enemy = hit.collider.GetComponentInParent<Enemy>();
+            //        enemy.ReceberDano(25f);
+            // AGORA: pega o HealthComponent direto — funciona pra qualquer coisa
+            // com vida (inimigo, barril destrutível no futuro, etc.), não só Enemy.
+            IDamageable alvo = hit.collider.GetComponentInParent<IDamageable>();
 
-            if (enemy != null)
+            if (alvo != null)
             {
-                enemy.ReceberDano(25f);
+                alvo.TakeDamage(25f);
             }
         }
     }
